@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        background-color: #f2f2f2;
+      }
+
+      .selected-color {
+        width: 200px;
+        height: 200px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        border: 1px solid #333;
+      }
+
+      .info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+        padding: 20px;
+        background-color: white;
+        border-radius: 10px;
+      }
+
+      .info h3 {
+        margin-bottom: 10px;
+        font-weight: bold;
+      }
+
+      #color-picker {
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="selected-color"></div>
+      <input type="color" id="color-picker" />
+      <div class="info">
+        <h3>Hexcode:</h3>
+        <p id="hexcode"></p>
+        <h3>RGB:</h3>
+        <p id="rgb"></p>
+        <h3>HSL:</h3>
+        <p id="hsl"></p>
+      </div>
+    </div>
+  </body>
+</html>
+
+<script src="Colorselector.js"></script>
